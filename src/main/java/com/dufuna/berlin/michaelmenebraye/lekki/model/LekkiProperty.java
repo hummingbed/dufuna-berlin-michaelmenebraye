@@ -112,7 +112,10 @@ public class LekkiProperty {
 
     @Override
     public String toString() {
-        return propertyId + ", " + address + ", " + propertyType;
+        return propertyId + ", " + address + ", " + propertyType + ", " + numBedrooms
+                + ", " + numSittingRooms + ", " + numKitchens + ", " + numBathrooms
+                + ", " + numToilets + ", " + propertyOwner + ", " + description
+                + ", " + validFrom + ", " + validTo;
     }
 
     @Override
