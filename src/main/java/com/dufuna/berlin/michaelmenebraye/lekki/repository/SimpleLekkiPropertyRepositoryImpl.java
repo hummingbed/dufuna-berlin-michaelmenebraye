@@ -36,14 +36,4 @@ public class SimpleLekkiPropertyRepositoryImpl implements SimpleLekkiPropertyRep
         propertyMap.put(property.getPropertyId(), property);
         return property;
     }
-
-
-//    public LekkiProperty update(LekkiProperty property) {
-//        if (propertyMap.containsKey(property.getPropertyId())) {
-//            propertyMap.put(property.getPropertyId(), property);
-//            return property;
-//        } else {
-//            throw new IllegalArgumentException("Property with id " + property.getPropertyId() + " does not exist.");
-//        }
-//    }
 }

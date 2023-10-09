@@ -7,12 +7,9 @@ import java.util.List;
 public interface LekkiPropertyService {
     void saveProperty(LekkiProperty property);
 
-//    LekkiProperty saveProperty(LekkiProperty property);
-
     LekkiProperty getPropertyById(String id);
 
     List<LekkiProperty> getProperties();
-
 
     LekkiProperty getProperty();
 }

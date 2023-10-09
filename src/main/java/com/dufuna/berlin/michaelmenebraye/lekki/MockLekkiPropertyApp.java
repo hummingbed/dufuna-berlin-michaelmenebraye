@@ -12,7 +12,6 @@ public class MockLekkiPropertyApp {
 
         LekkiPropertyService propertyService = new MockLekkiPropertyService();
 
-        // Create and save multiple LekkiProperty objects
         for (int i = 0; i < 3; i++) {
             LekkiProperty property = new LekkiProperty();
             property.setPropertyId("Lekki00" + i);
@@ -31,12 +30,10 @@ public class MockLekkiPropertyApp {
             propertyService.saveProperty(property);
         }
 
-        // Get a single LekkiProperty and print it
         LekkiProperty retrievedProperty = propertyService.getPropertyById("Lekki001");
         System.out.println("\nsingle Property:");
         System.out.println(retrievedProperty);
 
-        // Get multiple LekkiProperty objects and print them
         List<LekkiProperty> properties = propertyService.getProperties();
         System.out.println("\nAll Properties:");
         for (LekkiProperty property : properties) {
