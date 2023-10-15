@@ -1,7 +1,7 @@
 package com.dufuna.berlin.michaelmenebraye.lekki.model;
 
 public class LekkiProperty {
-    String propertyId;
+    int propertyId;
     String address;
     String propertyType;
     int numBedrooms;
@@ -14,11 +14,11 @@ public class LekkiProperty {
     String validFrom;
     String validTo;
 
-    public String getPropertyId() {
+    public int getPropertyId() {
         return propertyId;
     }
 
-    public void setPropertyId(String propertyId) {
+    public void setPropertyId(int propertyId) {
         this.propertyId = propertyId;
     }
 
@@ -123,11 +123,12 @@ public class LekkiProperty {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         LekkiProperty that = (LekkiProperty) o;
-        return propertyId.equals(that.propertyId);
+//        return propertyId.equals(that.propertyId);
+        return Integer.valueOf(propertyId).equals(that.propertyId);
     }
 
     @Override
     public int hashCode() {
-        return propertyId.hashCode();
+        return Integer.valueOf(propertyId).hashCode();
     }
 }

@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class SimpleLekkiPropertyRepositoryImpl implements SimpleLekkiPropertyRepository {
 
-    private final Map<String, LekkiProperty> propertyMap;
+    private final Map<Integer, LekkiProperty> propertyMap;
 
     public SimpleLekkiPropertyRepositoryImpl() {
         this.propertyMap = new HashMap<>();
@@ -34,6 +34,6 @@ public class SimpleLekkiPropertyRepositoryImpl implements SimpleLekkiPropertyRep
     @Override
     public LekkiProperty update(LekkiProperty property) {
         propertyMap.put(property.getPropertyId(), property);
-        return property;
+        return null;
     }
 }

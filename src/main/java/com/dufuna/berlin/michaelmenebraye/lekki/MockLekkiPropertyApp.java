@@ -10,11 +10,10 @@ public class MockLekkiPropertyApp {
 
     public static void main(String[] args) {
 
-        LekkiPropertyService propertyService = new MockLekkiPropertyService();
-
+        MockLekkiPropertyService propertyService = new MockLekkiPropertyService();
         for (int i = 0; i < 3; i++) {
             LekkiProperty property = new LekkiProperty();
-            property.setPropertyId("Lekki00" + i);
+            property.setPropertyId(1 + i);
             property.setAddress("Lekki phase " + (i + 1) + " Street");
             property.setPropertyType("bungalow");
             property.setNumBedrooms(3);
@@ -23,14 +22,14 @@ public class MockLekkiPropertyApp {
             property.setNumBathrooms(2);
             property.setNumToilets(3);
             property.setPropertyOwner("james brown");
-            property.setDescription("A beautiful house in 3 bedroom bungalow in Lekki");
+            property.setDescription("A beautiful 3 bedroom bungalow in Lekki");
             property.setValidFrom("2023-10-01");
             property.setValidTo("2023-12-31");
 
             propertyService.saveProperty(property);
         }
 
-        LekkiProperty retrievedProperty = propertyService.getPropertyById("Lekki001");
+        LekkiProperty retrievedProperty = propertyService.getPropertyById(Integer.toString(1));
         System.out.println("\nsingle Property:");
         System.out.println(retrievedProperty);
 

@@ -17,13 +17,17 @@ public class MockLekkiPropertyService implements LekkiPropertyService {
 
     @Override
     public LekkiProperty getPropertyById(String id) {
+        int targetId = Integer.parseInt(id);
+
         for (LekkiProperty property : properties) {
-            if (property.getPropertyId().equals(id)) {
+            if (property.getPropertyId() == targetId) {
                 return property;
             }
         }
+
         return null;
     }
+
 
     @Override
     public List<LekkiProperty> getProperties() {
