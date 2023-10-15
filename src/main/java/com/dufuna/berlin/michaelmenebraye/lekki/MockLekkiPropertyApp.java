@@ -22,7 +22,7 @@ public class MockLekkiPropertyApp {
         property.setValidFrom("2023-10-01");
         property.setValidTo("2023-12-31");
 
-        LekkiPropertyService propertyService = new MockLekkiPropertyService();
+        MockLekkiPropertyService propertyService = new MockLekkiPropertyService();
 
         propertyService.saveProperty(property);
 
