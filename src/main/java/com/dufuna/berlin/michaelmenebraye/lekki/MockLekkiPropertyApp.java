@@ -9,7 +9,7 @@ public class MockLekkiPropertyApp {
     public static void main(String[] args) {
 
         LekkiProperty property = new LekkiProperty();
-        property.setPropertyId("Lekki001");
+        property.setPropertyId(1);
         property.setAddress("Lekki phase 1 Street");
         property.setPropertyType("bungalow");
         property.setNumBedrooms(3);
@@ -21,7 +21,6 @@ public class MockLekkiPropertyApp {
         property.setDescription("A beautiful house in 3 bedroom bungalow in Lekki");
         property.setValidFrom("2023-10-01");
         property.setValidTo("2023-12-31");
-
 
         LekkiPropertyService propertyService = new MockLekkiPropertyService();
 
