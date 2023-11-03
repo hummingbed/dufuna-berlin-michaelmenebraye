@@ -7,9 +7,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-// This is the implementation of the SimpleLekkiPropertyRepository interface.
-// It provides concrete implementations for the methods defined in the interface.
 
+/**
+ *  This is the implementation of the SimpleLekkiPropertyRepository interface.
+ *It provides concrete implementations for the methods defined in the interface.
+ *
+ * @author michael menebraye
+ *
+ */
 
 public class SimpleLekkiPropertyRepositoryImpl implements SimpleLekkiPropertyRepository {
 

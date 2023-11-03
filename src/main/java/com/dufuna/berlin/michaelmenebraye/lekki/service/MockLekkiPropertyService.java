@@ -5,9 +5,14 @@ import com.dufuna.berlin.michaelmenebraye.lekki.model.LekkiProperty;
 import java.util.ArrayList;
 import java.util.List;
 
-// This is a mock implementation of the LekkiPropertyService interface.
-// It provides a basic implementation of the service methods using a List to store LekkiProperty objects.
 
+/**
+ * This is a mock implementation of the LekkiPropertyService interface.
+ * It provides a basic implementation of the service methods using a List to store LekkiProperty objects.
+ *
+ * @author michael menebraye
+ *
+ */
 
 public class MockLekkiPropertyService implements LekkiPropertyService {
 

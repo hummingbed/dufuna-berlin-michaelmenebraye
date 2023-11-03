@@ -1,6 +1,13 @@
 package com.dufuna.berlin.michaelmenebraye.lekki.model;
-// This class represents a model for Lekki Properties. It contains various attributes that
-// define a property, such as propertyId, address, property type, number of rooms, etc.
+
+/**
+ *  This class represents a model for Lekki Properties. It contains various attributes that
+ *define a property, such as propertyId, address, property type, number of rooms, etc.
+ *
+ * @author michael menebraye
+ *
+ */
+
 public class LekkiProperty {
     int propertyId;
     String address;

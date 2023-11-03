@@ -4,8 +4,13 @@ import com.dufuna.berlin.michaelmenebraye.lekki.model.LekkiProperty;
 
 import java.util.List;
 
-// This is an interface for interacting with the repository of LekkiProperty objects.
-// It defines a set of methods that can be used to perform CRUD operations on LekkiProperty objects.
+/**
+ *  This is an interface for interacting with the repository of LekkiProperty objects.
+ *It defines a set of methods that can be used to perform CRUD operations on LekkiProperty objects.
+ *
+ * @author michael menebraye
+ *
+ */
 
 public interface SimpleLekkiPropertyRepository {
     LekkiProperty save(LekkiProperty property);  // Method for saving a LekkiProperty object to the repository

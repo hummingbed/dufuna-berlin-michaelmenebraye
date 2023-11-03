@@ -4,8 +4,13 @@ import com.dufuna.berlin.michaelmenebraye.lekki.model.LekkiProperty;
 
 import java.util.List;
 
-// This is the interface for the LekkiPropertyService.
-// It defines the methods that a service handling LekkiProperty objects should implement.
+/**
+ * This is the interface for the LekkiPropertyService.
+ *It defines the methods that a service handling LekkiProperty objects should implement.
+ *
+ * @author michael menebraye
+ *
+ */
 
 public interface LekkiPropertyService {
     // Method for saving a LekkiProperty object.

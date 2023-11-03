@@ -5,8 +5,16 @@ import com.dufuna.berlin.michaelmenebraye.lekki.service.LekkiPropertyService;
 import com.dufuna.berlin.michaelmenebraye.lekki.service.MockLekkiPropertyService;
 
 import java.util.List;
-// This is the main class for running the MockLekkiPropertyApp.
-// It demonstrates the usage of MockLekkiPropertyService to save and retrieve LekkiProperty objects.
+
+
+/**
+ *  This is the main class for running the MockLekkiPropertyApp.
+ *It demonstrates the usage of MockLekkiPropertyService to save and retrieve LekkiProperty objects.
+ *
+ * @author michael menebraye
+ *
+ */
+
 public class MockLekkiPropertyApp {
 
     public static void main(String[] args) {
